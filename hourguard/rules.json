@@ -1,0 +1,274 @@
+{
+  "Schema": 1,
+  "Version": 1,
+  "Published": "2026-10-30",
+  "Countries": [
+    {
+      "Code": "CA",
+      "Name": "Canada",
+      "Flag": "🇨🇦",
+      "Authority": "IRCC",
+      "Limit_Summary": "24 hours a week off campus while classes are in session",
+      "Window_Days": 7,
+      "Window_Start": "Any_Day",
+      "Window_Name": "week",
+      "Min_Break_Days": 7,
+      "Max_Consecutive_Break_Days": 150,
+      "Max_Break_Days_Per_Year": 180,
+      "Work_Allowed_Before_Start": false,
+      "Course_Types": [
+        {
+          "Id": "Post_Secondary",
+          "Label": "College or university program",
+          "Detail": "Full-time, or part-time in your final semester",
+          "Unlimited": false,
+          "Note": "",
+          "Caps": [
+            { "From": "2024-05-01", "Cap_Minutes": 1200 },
+            { "From": "2024-11-08", "Cap_Minutes": 1440 }
+          ]
+        }
+      ],
+      "Job_Types": [
+        {
+          "Id": "Off_Campus",
+          "Label": "Off-campus job",
+          "Detail": "Any employer off your school's campus.",
+          "Counting": "Counts",
+          "Warning": ""
+        },
+        {
+          "Id": "On_Campus",
+          "Label": "On-campus job",
+          "Detail": "Your school, or a business on campus. No hour limit.",
+          "Counting": "Separate",
+          "Warning": ""
+        },
+        {
+          "Id": "Remote_Foreign",
+          "Label": "Remote, employer outside Canada",
+          "Detail": "Working from Canada for an employer abroad. Doesn't count toward the 24 hours.",
+          "Counting": "Separate",
+          "Warning": "Keep your contract handy as proof the employer is outside Canada."
+        },
+        {
+          "Id": "Placement",
+          "Label": "Required co-op or placement",
+          "Detail": "Only if your program requires it. Tracked separately.",
+          "Counting": "Separate",
+          "Warning": "A job called \"internship\" isn't a required placement unless your program says so."
+        },
+        {
+          "Id": "Gig",
+          "Label": "Gig or self-employed",
+          "Detail": "Delivery, rideshare, freelance. Counts toward the 24 hours.",
+          "Counting": "Counts",
+          "Warning": "Count all the time you spend earning, including time online waiting for orders, unless you're sure it's unpaid."
+        }
+      ],
+      "Check_Conditions_Text": "Check the conditions printed on your study permit.",
+      "Check_Conditions_Url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html",
+      "Sources": [
+        { "Title": "IRCC: Work off campus as an international student", "Url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html" },
+        { "Title": "IRCC: Work on campus", "Url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-on-campus.html" },
+        { "Title": "IRCC Help Centre: working during scheduled breaks", "Url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=503" }
+      ],
+      "How_We_Count": [
+        "Up to 24 hours of off-campus work in any 7 days in a row. IRCC doesn't say when a week starts, so HourGuard checks every 7-day stretch.",
+        "Scheduled breaks of 7 days or more have no limit. Shorter breaks count as term time.",
+        "Unlimited hours stop after 150 back-to-back break days, and after 180 unlimited days in a calendar year.",
+        "On-campus work, remote work for an employer outside Canada and required placements are tracked separately.",
+        "No work before your program starts.",
+        "Planned shifts count as soon as you add them, so you're warned before you agree to too much."
+      ],
+      "Last_Checked": "2026-10-30",
+      "Notice": null
+    },
+    {
+      "Code": "AU",
+      "Name": "Australia",
+      "Flag": "🇦🇺",
+      "Authority": "Home Affairs",
+      "Limit_Summary": "48 hours a fortnight while your course is in session",
+      "Window_Days": 14,
+      "Window_Start": "Monday",
+      "Window_Name": "fortnight",
+      "Min_Break_Days": 0,
+      "Max_Consecutive_Break_Days": 0,
+      "Max_Break_Days_Per_Year": 0,
+      "Work_Allowed_Before_Start": false,
+      "Course_Types": [
+        {
+          "Id": "Coursework",
+          "Label": "Coursework degree, diploma or VET",
+          "Detail": "Bachelor's, master's by coursework, diploma, ELICOS",
+          "Unlimited": false,
+          "Note": "",
+          "Caps": [
+            { "From": "2023-07-01", "Cap_Minutes": 2880 }
+          ]
+        },
+        {
+          "Id": "Research",
+          "Label": "Master's by research or PhD",
+          "Detail": "No limit once your course has started",
+          "Unlimited": true,
+          "Note": "Research students have no work limit once their course starts. HourGuard still keeps your records.",
+          "Caps": []
+        }
+      ],
+      "Job_Types": [
+        {
+          "Id": "Off_Campus",
+          "Label": "Job",
+          "Detail": "Any job, on or off campus, paid or unpaid.",
+          "Counting": "Counts",
+          "Warning": ""
+        },
+        {
+          "Id": "Placement",
+          "Label": "Mandatory course placement",
+          "Detail": "Only if it's a required part of your course as registered on CRICOS.",
+          "Counting": "Separate",
+          "Warning": "Elective placements, and hours beyond what your course requires, count toward the 48 hours."
+        },
+        {
+          "Id": "Gig",
+          "Label": "Gig or self-employed",
+          "Detail": "Delivery, rideshare, freelance. Counts toward the 48 hours.",
+          "Counting": "Counts",
+          "Warning": ""
+        }
+      ],
+      "Check_Conditions_Text": "Check your visa conditions in VEVO.",
+      "Check_Conditions_Url": "https://immi.homeaffairs.gov.au/visas/already-have-a-visa/check-visa-details-and-conditions/check-conditions-online",
+      "Sources": [
+        { "Title": "Study Australia: Student visa (subclass 500)", "Url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-guide-to-visas/student-visa-subclass-500" },
+        { "Title": "UNE: Work conditions for student visa holders", "Url": "https://www.une.edu.au/international/student-visa-and-conditions/work-conditions-for-student-visa-holders" },
+        { "Title": "ECU: Work experience and placements", "Url": "https://intranet.ecu.edu.au/student/my-studies/international-students/work-experience-and-work-placement-for-international-students" }
+      ],
+      "How_We_Count": [
+        "Up to 48 hours in any fortnight while your course is in session. A fortnight is 14 days starting on a Monday.",
+        "Fortnights roll every week: weeks 2 and 3 are a fortnight too, so HourGuard checks every pair of weeks.",
+        "Scheduled course breaks have no limit.",
+        "Unpaid work counts. Mandatory placements registered on CRICOS are tracked separately.",
+        "No work before your course starts.",
+        "Planned shifts count as soon as you add them, so you're warned before you agree to too much."
+      ],
+      "Last_Checked": "2026-10-30",
+      "Notice": null
+    },
+    {
+      "Code": "UK",
+      "Name": "United Kingdom",
+      "Flag": "🇬🇧",
+      "Authority": "Home Office",
+      "Limit_Summary": "20 hours a week in term time (10 below degree level)",
+      "Window_Days": 7,
+      "Window_Start": "Monday",
+      "Window_Name": "week",
+      "Min_Break_Days": 0,
+      "Max_Consecutive_Break_Days": 0,
+      "Max_Break_Days_Per_Year": 0,
+      "Work_Allowed_Before_Start": true,
+      "Course_Types": [
+        {
+          "Id": "Degree",
+          "Label": "Undergraduate degree",
+          "Detail": "Degree level or above",
+          "Unlimited": false,
+          "Note": "",
+          "Caps": [
+            { "From": "2000-01-01", "Cap_Minutes": 1200 }
+          ]
+        },
+        {
+          "Id": "Taught_Masters",
+          "Label": "Taught master's",
+          "Detail": "MA, MSc, MBA and similar",
+          "Unlimited": false,
+          "Note": "Universities usually treat your summer dissertation period as term time. Only add it as a break if your university says so.",
+          "Caps": [
+            { "From": "2000-01-01", "Cap_Minutes": 1200 }
+          ]
+        },
+        {
+          "Id": "Research",
+          "Label": "PhD or research degree",
+          "Detail": "Term time is set by your university",
+          "Unlimited": false,
+          "Note": "Research students are usually in term time all year. Only add approved annual leave as a break.",
+          "Caps": [
+            { "From": "2000-01-01", "Cap_Minutes": 1200 }
+          ]
+        },
+        {
+          "Id": "Below_Degree",
+          "Label": "Below degree level",
+          "Detail": "Foundation, pre-sessional English, A-levels",
+          "Unlimited": false,
+          "Note": "",
+          "Caps": [
+            { "From": "2000-01-01", "Cap_Minutes": 600 }
+          ]
+        }
+      ],
+      "Job_Types": [
+        {
+          "Id": "Off_Campus",
+          "Label": "Job (employed)",
+          "Detail": "Any employer, including your university. Voluntary work counts too.",
+          "Counting": "Counts",
+          "Warning": ""
+        },
+        {
+          "Id": "Placement",
+          "Label": "Assessed course placement",
+          "Detail": "Assessed, and an integral part of your course. Tracked separately.",
+          "Counting": "Separate",
+          "Warning": ""
+        },
+        {
+          "Id": "Gig",
+          "Label": "Gig or self-employed",
+          "Detail": "Delivery and ride apps, freelance, selling through apps.",
+          "Counting": "Not_Allowed",
+          "Warning": "Student visa holders can't be self-employed. Delivery and ride apps usually count as self-employment."
+        }
+      ],
+      "Check_Conditions_Text": "Check the work conditions on your eVisa.",
+      "Check_Conditions_Url": "https://www.gov.uk/view-prove-immigration-status",
+      "Sources": [
+        { "Title": "UKCISA: Navigating work and study with a Student visa", "Url": "https://www.ukcisa.org.uk/blog/7093/Navigating-work-and-study-with-a-Student-visa" },
+        { "Title": "University of Warwick: Working on the Student route", "Url": "https://warwick.ac.uk/study/international/visa/student_route/working" },
+        { "Title": "GOV.UK: View and prove your immigration status", "Url": "https://www.gov.uk/view-prove-immigration-status" }
+      ],
+      "How_We_Count": [
+        "Up to 20 hours a week in term time at degree level, or 10 below degree level.",
+        "A week runs Monday to Sunday. There's no averaging: a long week can't be balanced by a short one.",
+        "Outside term time (official vacations) you can work full-time.",
+        "Self-employment, including delivery and ride apps, isn't allowed at all.",
+        "Assessed placements that are part of your course are tracked separately.",
+        "Planned shifts count as soon as you add them, so you're warned before you agree to too much."
+      ],
+      "Last_Checked": "2026-10-30",
+      "Notice": null
+    }
+  ],
+  "Changes": [
+    {
+      "Date": "2024-11-08",
+      "Country": "CA",
+      "Title": "Off-campus limit raised to 24 hours a week",
+      "Body": "IRCC raised the off-campus limit during academic sessions from 20 to 24 hours a week.",
+      "Link": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html"
+    },
+    {
+      "Date": "2023-07-01",
+      "Country": "AU",
+      "Title": "Work limit set at 48 hours a fortnight",
+      "Body": "Student visa holders can work up to 48 hours a fortnight while their course is in session.",
+      "Link": "https://www.studyaustralia.gov.au/en/plan-your-move/your-guide-to-visas/student-visa-subclass-500"
+    }
+  ]
+}
