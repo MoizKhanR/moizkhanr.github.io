@@ -1,0 +1,593 @@
+{
+  "Version": 2,
+  "Updated": "2026-11-18",
+  "Regions": [
+    {
+      "Code": "CA",
+      "Name": "Canada (outside Quebec)",
+      "Rule_Name": "Scanner Price Accuracy Code",
+      "Is_Law": false,
+      "Free_Limit": 10,
+      "Free_Limit_Included": false,
+      "Discount": 10,
+      "Rule_Text": "When an item scans higher than its shelf price, the first one is free if the correct price is under $10. If it's $10 or more, you get $10 off the correct price. The rest of the same item ring up at the shelf price.",
+      "Claim_Phrase": "Could you apply the Scanner Price Accuracy Code to this item?",
+      "Official_Name": "Retail Council of Canada",
+      "Official_Url": "https://www.retailcouncil.org/scanner-price-accuracy-code/",
+      "Complaint_Text": "If the store says no, you can tell the Retail Council of Canada. An independent reviewer looks at every complaint.",
+      "Complaint_Url": "https://www.surveymonkey.com/r/ScannerCode",
+      "Last_Checked": "2026-11-05",
+      "Questions": [
+        {
+          "Id": "sticker",
+          "Text": "Did the item have its own price sticker or tag on it?",
+          "Reason": "Items with their own price sticker, hang tag or printed label aren't covered."
+        },
+        {
+          "Id": "member",
+          "Text": "Was the shelf price a member price (PC Optimum, Scene+)?",
+          "Reason": "Member and loyalty prices aren't covered."
+        },
+        {
+          "Id": "excluded",
+          "Text": "Is it alcohol, tobacco, a gift card, or an online order?",
+          "Reason": "Alcohol, tobacco, gift cards and online orders aren't covered."
+        },
+        {
+          "Id": "expired",
+          "Text": "Did the sale tag show an end date that has passed?",
+          "Reason": "Expired sale tags don't count when the regular price is shown."
+        }
+      ],
+      "Not_Covered": [
+        "Items with their own price on them: sale or clearance stickers, hang tags, sewn-in tags, printed labels",
+        "Items sold by weight, and produce codes keyed in by hand",
+        "Alcohol, tobacco, gift cards, gas, and products with a legal minimum price",
+        "Member or loyalty prices, like PC Optimum prices",
+        "Online and delivery orders",
+        "Sale prices that have ended, when the regular price is shown",
+        "Items that don't match the shelf tag, or sit on the wrong shelf",
+        "Flyer or web prices, unless no stores are listed or your store is"
+      ],
+      "Stores": [
+        "Walmart",
+        "Loblaws",
+        "No Frills",
+        "Real Canadian Superstore",
+        "Zehrs",
+        "Fortinos",
+        "Your Independent Grocer",
+        "Valu-mart",
+        "Sobeys",
+        "FreshCo",
+        "Foodland",
+        "Safeway",
+        "Metro",
+        "Food Basics",
+        "Costco",
+        "Shoppers Drug Mart",
+        "Giant Tiger",
+        "Canadian Tire",
+        "Home Depot"
+      ],
+      "Provinces": [
+        "Ontario",
+        "British Columbia",
+        "Alberta",
+        "Manitoba",
+        "Saskatchewan",
+        "Nova Scotia",
+        "New Brunswick",
+        "Prince Edward Island",
+        "Newfoundland and Labrador",
+        "Yukon",
+        "Northwest Territories",
+        "Nunavut"
+      ],
+      "Country": "Canada",
+      "Needs_Engine": 1,
+      "Currency_Symbol": "$"
+    },
+    {
+      "Code": "QC",
+      "Name": "Quebec",
+      "Rule_Name": "Price Accuracy Policy",
+      "Is_Law": true,
+      "Free_Limit": 15,
+      "Free_Limit_Included": true,
+      "Discount": 15,
+      "Rule_Text": "In Quebec this is the law. When an item rings up higher than its shelf price, it's free if the correct price is $15 or less. Above $15, you get $15 off the correct price. You can claim it after you've left the store.",
+      "Claim_Phrase": "Pouvez-vous appliquer la Politique d'exactitude des prix à cet article?",
+      "Official_Name": "Option consommateurs",
+      "Official_Url": "https://option-consommateurs.org/en/information-and-advice/price-accuracy-policy",
+      "Complaint_Text": "If the store says no, you can file a complaint with the Office de la protection du consommateur.",
+      "Complaint_Url": "https://www.opc.gouv.qc.ca/en/",
+      "Last_Checked": "2026-11-05",
+      "Questions": [
+        {
+          "Id": "sticker",
+          "Text": "Did the item have its own price sticker on it?",
+          "Reason": "The policy covers stores that don't put a price on each item."
+        },
+        {
+          "Id": "excluded",
+          "Text": "Is it clothing, shoes, milk, alcohol, or a pharmacy-only medicine?",
+          "Reason": "Clothing, shoes, milk, grocery alcohol and pharmacy-only medicines aren't covered."
+        },
+        {
+          "Id": "expired",
+          "Text": "Did the sale tag show an end date that has passed?",
+          "Reason": "A sale price that has ended doesn't count."
+        }
+      ],
+      "Not_Covered": [
+        "Stores that put a price sticker on every item",
+        "Clothing and shoes",
+        "Milk",
+        "Alcohol sold in grocery stores",
+        "Medicines sold only by a pharmacist",
+        "Sale prices that have ended"
+      ],
+      "Stores": [
+        "IGA",
+        "Metro",
+        "Maxi",
+        "Provigo",
+        "Super C",
+        "Walmart",
+        "Costco",
+        "Pharmaprix",
+        "Jean Coutu",
+        "Adonis",
+        "Canadian Tire",
+        "Home Depot"
+      ],
+      "Provinces": [
+        "Quebec"
+      ],
+      "Country": "Canada",
+      "Needs_Engine": 1,
+      "Currency_Symbol": "$"
+    },
+    {
+      "Code": "US_CT",
+      "Name": "Connecticut",
+      "Country": "United States",
+      "Needs_Engine": 2,
+      "Currency_Symbol": "$",
+      "Rule_Name": "Get One Free law",
+      "Is_Law": true,
+      "Free_Limit": 20,
+      "Free_Limit_Included": true,
+      "Discount": 20,
+      "Rule_Text": "In Connecticut this is the law. When a grocery or household item rings up higher than its shelf price, one of them is free, up to a value of $20. Stores have to post a sign about it.",
+      "Claim_Phrase": "This rang up higher than the shelf price. Under Connecticut's Get One Free law, could I have one free?",
+      "Official_Name": "Connecticut Department of Consumer Protection",
+      "Official_Url": "https://portal.ct.gov/DCP/Common-Elements/Common-Elements/The-Get-One-Free-Law",
+      "Complaint_Text": "If the store says no, you can file a complaint with the Connecticut Department of Consumer Protection.",
+      "Complaint_Url": "https://portal.ct.gov/DCP/Complaint-Center",
+      "Last_Checked": "2026-11-18",
+      "Questions": [
+        {
+          "Id": "commodity",
+          "Text": "Is it something you don't use up, like clothing, a tool, a mop or a toothbrush?",
+          "Reason": "The law covers things you use up and buy again: groceries, toiletries, cosmetics, paper goods."
+        },
+        {
+          "Id": "excluded",
+          "Text": "Is it alcohol, or a soft drink in a deposit can or bottle?",
+          "Reason": "Alcohol and carbonated soft drink containers aren't covered."
+        },
+        {
+          "Id": "expired",
+          "Text": "Did the sale tag show an end date that has passed?",
+          "Reason": "A sale price that has ended doesn't count."
+        }
+      ],
+      "Not_Covered": [
+        "Things you don't use up: clothing, tools, mops, sponges, toothbrushes, greeting cards",
+        "Alcohol",
+        "Carbonated soft drinks in deposit containers",
+        "Sale prices that have ended, when the sign shows the dates",
+        "More than one item: the rest ring up at the shelf price"
+      ],
+      "Stores": [
+        "Aldi",
+        "Big Y",
+        "CVS",
+        "Costco",
+        "Dollar General",
+        "Family Dollar",
+        "Geissler's",
+        "Highland Park Market",
+        "Home Depot",
+        "Kroger",
+        "Lowe's",
+        "Price Chopper",
+        "Shaw's",
+        "ShopRite",
+        "Stop & Shop",
+        "Target",
+        "Trader Joe's",
+        "Walgreens",
+        "Walmart",
+        "Whole Foods"
+      ],
+      "Provinces": [
+        "Connecticut"
+      ]
+    },
+    {
+      "Code": "US_MA",
+      "Name": "Massachusetts",
+      "Country": "United States",
+      "Needs_Engine": 2,
+      "Currency_Symbol": "$",
+      "Rule_Name": "Price Accuracy Guarantee",
+      "Is_Law": true,
+      "Free_Limit": 10,
+      "Free_Limit_Included": true,
+      "Discount": 10,
+      "Rule_Text": "In Massachusetts, grocery stores that don't price every item have to post a Price Accuracy Guarantee at each checkout. When an item rings up higher than the lowest price shown, the first one is free if that price is $10 or less. Above $10, you get $10 off the first one.",
+      "Claim_Phrase": "This rang up higher than the shelf price. Could you apply the Price Accuracy Guarantee?",
+      "Official_Name": "Massachusetts Division of Standards",
+      "Official_Url": "https://www.mass.gov/service-details/accurate-scanning-and-pricing",
+      "Complaint_Text": "If the store says no, you can file a complaint with the Massachusetts Attorney General's Office, or call the Division of Standards at (617) 727-3480.",
+      "Complaint_Url": "https://www.mass.gov/how-to/file-a-consumer-complaint",
+      "Last_Checked": "2026-11-18",
+      "Questions": [
+        {
+          "Id": "grocery",
+          "Text": "Is it something other than food, drinks, pet food, paper goods, soap, cleaners, laundry products or light bulbs?",
+          "Reason": "The guarantee covers grocery items only."
+        },
+        {
+          "Id": "excluded",
+          "Text": "Is it alcohol?",
+          "Reason": "Alcoholic drinks aren't covered."
+        },
+        {
+          "Id": "posted",
+          "Text": "Was there no Price Accuracy Guarantee sign at the checkout?",
+          "Reason": "Only stores that post the guarantee give the item free. Any store has to refund an overcharge."
+        }
+      ],
+      "Not_Covered": [
+        "Anything that isn't a grocery item: food, non-alcoholic drinks, pet food and supplies, paper and plastic goods, soap, cleaners, laundry products, light bulbs",
+        "Alcohol",
+        "Stores that don't post the Price Accuracy Guarantee (they still have to refund the overcharge)"
+      ],
+      "Stores": [
+        "Aldi",
+        "BJ's Wholesale",
+        "Big Y",
+        "CVS",
+        "Costco",
+        "Dollar General",
+        "Family Dollar",
+        "Hannaford",
+        "Home Depot",
+        "Kroger",
+        "Lowe's",
+        "Market Basket",
+        "Price Chopper",
+        "Roche Bros.",
+        "Shaw's",
+        "Star Market",
+        "Stop & Shop",
+        "Target",
+        "Trader Joe's",
+        "Walgreens",
+        "Walmart",
+        "Whole Foods"
+      ],
+      "Provinces": [
+        "Massachusetts"
+      ]
+    },
+    {
+      "Code": "US_MI",
+      "Name": "Michigan",
+      "Country": "United States",
+      "Needs_Engine": 2,
+      "Currency_Symbol": "$",
+      "Rule_Name": "Scanner Law",
+      "Is_Law": true,
+      "Free_Limit": 0,
+      "Free_Limit_Included": false,
+      "Discount": 0,
+      "Bonus_Times": 10,
+      "Bonus_Min": 1,
+      "Bonus_Max": 5,
+      "Claim_Days": 30,
+      "Rule_Text": "In Michigan this is the law. When you're charged more than the price shown, you get the difference back, plus a bonus of 10 times the difference: at least $1, at most $5. Tell the store within 30 days and bring the receipt. The store has 2 days to pay.",
+      "Claim_Phrase": "I was charged more than the price shown. Under Michigan's Scanner Law, could I have the difference back plus the bonus?",
+      "Official_Name": "Michigan Department of Attorney General",
+      "Official_Url": "https://www.michigan.gov/consumerprotection/protect-yourself/consumer-alerts/shopping/michigans-scanner-law",
+      "Complaint_Text": "If the store doesn't pay within 2 days, you can file a complaint with the Michigan Attorney General, or take it to small claims court for $250 or your loss, whichever is more.",
+      "Complaint_Url": "https://www.michigan.gov/ag/consumer-protection",
+      "Last_Checked": "2026-11-18",
+      "Questions": [
+        {
+          "Id": "fixed",
+          "Text": "Did the cashier fix the price before you paid?",
+          "Reason": "The bonus is for completed sales: a price fixed at the till doesn't get one."
+        },
+        {
+          "Id": "expired",
+          "Text": "Did the sale tag show an end date that has passed?",
+          "Reason": "A sale price that has ended doesn't count."
+        }
+      ],
+      "Not_Covered": [
+        "Prices fixed at the till before you paid",
+        "More than 30 days after you shopped",
+        "One bonus per sale for the same item: each one still gets the difference back"
+      ],
+      "Stores": [
+        "Aldi",
+        "Busch's",
+        "CVS",
+        "Costco",
+        "D&W Fresh Market",
+        "Dollar General",
+        "Family Dollar",
+        "Family Fare",
+        "Hiller's",
+        "Home Depot",
+        "Kroger",
+        "Lowe's",
+        "Meijer",
+        "Plum Market",
+        "Spartan",
+        "Target",
+        "Trader Joe's",
+        "Walgreens",
+        "Walmart",
+        "Whole Foods"
+      ],
+      "Provinces": [
+        "Michigan"
+      ]
+    },
+    {
+      "Code": "US_WI",
+      "Name": "Wisconsin",
+      "Country": "United States",
+      "Needs_Engine": 2,
+      "Currency_Symbol": "$",
+      "Rule_Name": "Price refund law",
+      "Is_Law": true,
+      "Free_Limit": 0,
+      "Free_Limit_Included": false,
+      "Discount": 0,
+      "Rule_Text": "In Wisconsin this is the law: when you're charged more than the posted or advertised price, the store has to refund the difference. Some stores give the item free.",
+      "Claim_Phrase": "I was charged more than the posted price. Could I have the difference back?",
+      "Official_Name": "Wisconsin DATCP",
+      "Official_Url": "https://datcp.wi.gov/Documents/PriceRefundPricePostingFactSheet.pdf",
+      "Complaint_Text": "If the store says no, you can file a complaint with Wisconsin's Department of Agriculture, Trade and Consumer Protection.",
+      "Complaint_Url": "https://datcp.wi.gov/Pages/Programs_Services/FileConsumerComplaint.aspx",
+      "Last_Checked": "2026-11-18",
+      "Questions": [
+        {
+          "Id": "expired",
+          "Text": "Did the sale tag show an end date that has passed?",
+          "Reason": "A sale price that has ended doesn't count."
+        }
+      ],
+      "Not_Covered": [
+        "Sale prices that have ended"
+      ],
+      "Stores": [
+        "Aldi",
+        "CVS",
+        "Costco",
+        "Dollar General",
+        "Family Dollar",
+        "Festival Foods",
+        "Fleet Farm",
+        "Home Depot",
+        "Kroger",
+        "Kwik Trip",
+        "Lowe's",
+        "Metro Market",
+        "Pick 'n Save",
+        "Piggly Wiggly",
+        "Target",
+        "Trader Joe's",
+        "Walgreens",
+        "Walmart",
+        "Whole Foods",
+        "Woodman's"
+      ],
+      "Provinces": [
+        "Wisconsin"
+      ]
+    },
+    {
+      "Code": "US",
+      "Name": "United States (other states)",
+      "Country": "United States",
+      "Needs_Engine": 2,
+      "Currency_Symbol": "$",
+      "Rule_Name": "Shelf price",
+      "Is_Law": false,
+      "Free_Limit": 0,
+      "Free_Limit_Included": false,
+      "Discount": 0,
+      "Rule_Text": "Most states expect a store to charge the price it shows, and many stores have their own scan accuracy policy. When an item rings up higher, ask for the shelf price. Some stores give it free.",
+      "Claim_Phrase": "This rang up higher than the shelf price. Could I have the shelf price?",
+      "Official_Name": "",
+      "Official_Url": "",
+      "Complaint_Text": "If the store says no, your state's consumer protection office or weights and measures office can help.",
+      "Complaint_Url": "https://www.usa.gov/state-consumer",
+      "Last_Checked": "2026-11-18",
+      "Questions": [
+        {
+          "Id": "expired",
+          "Text": "Did the sale tag show an end date that has passed?",
+          "Reason": "A sale price that has ended doesn't count."
+        }
+      ],
+      "Not_Covered": [
+        "Sale prices that have ended"
+      ],
+      "Stores": [
+        "Albertsons",
+        "Aldi",
+        "CVS",
+        "Costco",
+        "Dollar General",
+        "Family Dollar",
+        "Food Lion",
+        "Giant",
+        "H-E-B",
+        "Home Depot",
+        "Hy-Vee",
+        "Kroger",
+        "Lowe's",
+        "Meijer",
+        "Publix",
+        "Safeway",
+        "Sprouts",
+        "Target",
+        "Trader Joe's",
+        "Walgreens",
+        "Walmart",
+        "Wegmans",
+        "Whole Foods"
+      ],
+      "Provinces": [
+        "Another US state"
+      ]
+    },
+    {
+      "Code": "AU",
+      "Name": "Australia",
+      "Country": "Australia",
+      "Needs_Engine": 2,
+      "Currency_Symbol": "$",
+      "Rule_Name": "Scanning Code of Practice",
+      "Is_Law": false,
+      "Free_Limit": 50,
+      "Free_Limit_Included": false,
+      "Discount": 0,
+      "Rule_Text": "Supermarkets that signed the voluntary Scanning Code of Practice give you an item free when it scans higher than its shelf price, if the shelf price is under $50. Buy more than one and the rest ring up at the shelf price. Stores keep a copy of the code at the service desk.",
+      "Claim_Phrase": "This scanned higher than the shelf price. Could you apply the Scanning Code of Practice?",
+      "Official_Name": "NT Consumer Affairs",
+      "Official_Url": "https://nt.gov.au/law/rights/price-scanning",
+      "Complaint_Text": "If the store says no, ask for the manager or the store's customer service. For a bigger problem, the ACCC and your state's fair trading office can help.",
+      "Complaint_Url": "https://www.accc.gov.au/consumers/problem-with-a-product-or-service-you-bought/if-a-business-wont-fix-a-problem",
+      "Last_Checked": "2026-11-18",
+      "Questions": [
+        {
+          "Id": "excluded",
+          "Text": "Is it alcohol, tobacco or a gift card?",
+          "Reason": "Liquor, tobacco and gift cards aren't covered by the code."
+        },
+        {
+          "Id": "barcode",
+          "Text": "Was it an item without a barcode, keyed in by hand?",
+          "Reason": "Items without a barcode aren't covered by the code."
+        },
+        {
+          "Id": "member",
+          "Text": "Was the shelf price a member price (Flybuys, Everyday Rewards)?",
+          "Reason": "Member prices depend on the store's own terms."
+        },
+        {
+          "Id": "expired",
+          "Text": "Did the sale tag show an end date that has passed?",
+          "Reason": "A sale price that has ended doesn't count."
+        }
+      ],
+      "Not_Covered": [
+        "Items with a shelf price of $50 or more",
+        "Liquor and tobacco",
+        "Gift cards",
+        "Items without a barcode, or keyed in by hand",
+        "Stores that haven't signed the code"
+      ],
+      "Stores": [
+        "Aldi",
+        "Coles",
+        "IGA",
+        "Woolworths"
+      ],
+      "Provinces": [
+        "Australia"
+      ]
+    },
+    {
+      "Code": "NZ",
+      "Name": "New Zealand",
+      "Country": "New Zealand",
+      "Needs_Engine": 2,
+      "Currency_Symbol": "$",
+      "Rule_Name": "supermarket pricing policy",
+      "Is_Law": false,
+      "Free_Limit": 30,
+      "Free_Limit_Included": false,
+      "Discount": 0,
+      "Rule_Text": "Woolworths and the Foodstuffs supermarkets (New World, Pak'nSave) refund what you paid and let you keep the item when you're charged more than the shelf price (the first one; Foodstuffs for items under $30). Under the Fair Trading Act, a store can't charge more than the price it shows.",
+      "Claim_Phrase": "This rang up higher than the shelf price. Could you apply your incorrect pricing policy?",
+      "Official_Name": "Consumer Protection NZ",
+      "Official_Url": "https://www.consumerprotection.govt.nz/general-help/common-consumer-issues/misleading-prices-or-advertising",
+      "Complaint_Text": "If the store says no, you can report it to the Commerce Commission.",
+      "Complaint_Url": "https://comcom.govt.nz/report-a-concern",
+      "Last_Checked": "2026-11-18",
+      "Questions": [
+        {
+          "Id": "excluded",
+          "Text": "Is it alcohol, tobacco or a gift card?",
+          "Reason": "Alcohol, tobacco and gift cards are usually left out of these policies."
+        },
+        {
+          "Id": "expired",
+          "Text": "Did the sale tag show an end date that has passed?",
+          "Reason": "A sale price that has ended doesn't count."
+        }
+      ],
+      "Not_Covered": [
+        "Items of $30 or more at Foodstuffs stores (you still get the difference back)",
+        "Other stores: ask for the shelf price",
+        "Alcohol, tobacco and gift cards"
+      ],
+      "Stores": [
+        "Four Square",
+        "New World",
+        "Pak'nSave",
+        "Woolworths"
+      ],
+      "Provinces": [
+        "New Zealand"
+      ],
+      "Kind_Label": "STORE POLICY"
+    },
+    {
+      "Code": "WORLD",
+      "Name": "Somewhere else",
+      "Country": "",
+      "Needs_Engine": 2,
+      "Currency_Symbol": "",
+      "Rule_Name": "Shelf price",
+      "Is_Law": false,
+      "Free_Limit": 0,
+      "Free_Limit_Included": false,
+      "Discount": 0,
+      "Rule_Text": "Where you shop, we don't know of a rule that makes an overcharged item free. Most stores still charge you the price they show when you ask. Price Guard finds what rang up higher, so you know what to ask about.",
+      "Claim_Phrase": "This rang up higher than the shelf price. Could I have the shelf price?",
+      "Official_Name": "",
+      "Official_Url": "",
+      "Complaint_Text": "If the store says no, your country's consumer protection office can tell you what you're owed.",
+      "Complaint_Url": "",
+      "Last_Checked": "2026-11-18",
+      "Questions": [],
+      "Not_Covered": [],
+      "Stores": [],
+      "Provinces": [
+        "Somewhere else"
+      ]
+    }
+  ]
+}
